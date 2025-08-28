@@ -13,4 +13,5 @@ IPC (Inter-Process Communication) is a mechanism for exchanging data between pro
 Подключение Websocket инициализируется по `ws://cloud.com/api/ipc/connect`. При этом должны быть переданы следующие заголовки:
 
 - `Authorization` - парольная фраза группы
+- `X-Group-ID` - идентификатор группы
 - `X-Router-ID` - идентификатор ноды
