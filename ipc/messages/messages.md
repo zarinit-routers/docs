@@ -1,4 +1,4 @@
 # Сообщения
 
-- [Облако-коннектор](./cloud-connector.md)
-- [Коннектор-ноды](./connector-node.md)
+- [Облако-коннектор](ipc/messages/cloud-connector.md)
+- [Коннектор-ноды](ipc/messages/connector-node.md)

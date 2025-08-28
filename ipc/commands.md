@@ -24,6 +24,26 @@
 
 - ### `v1/timezone/get`
 
+Request: пустой
+
+Response:
+
+```json
+{
+  "timezone": "Europe/Moscow"
+}
+```
+
 - ### `v1/timezone/set`
+
+Request:
+
+```json
+{
+  "timezone": "Europe/Moscow"
+}
+```
+
+Response: такой же как и в [v1/timezone/get](ipc/commands.md#`v1/timezone/get`)
 
 ## Команды на рассмотрении, а также обновление API
