@@ -10,6 +10,6 @@
 Запустить документацию в красивом виде:
 
 ```bash
-npm i
+npm install
 npm run serve
 ```

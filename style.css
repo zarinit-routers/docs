@@ -1,0 +1,30 @@
+pre {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.token.property {
+    color: blue;
+}
+
+.token.string {
+    color: orange;
+}
+
+.token.function {
+    color: darkcyan;
+}
+
+.token.parameter,
+.token.variable {
+    color: purple;
+
+}
+
+.token.comment {
+    color: green;
+}
+
+blockquote {
+    font-style: italic;
+}
