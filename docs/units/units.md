@@ -10,4 +10,4 @@
 
 Схема:
 
-![Схема](units/scheme.png)
+![Схема](./scheme.png)
