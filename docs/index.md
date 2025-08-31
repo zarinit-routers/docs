@@ -1,4 +1,4 @@
-# Unnamed system
+# Zarinit routers
 
 Документация для проектов `zarinit-routers`
 
@@ -10,6 +10,5 @@
 Запустить документацию в красивом виде:
 
 ```bash
-npm install
-npm run serve
+uv run mkdocs serve
 ```

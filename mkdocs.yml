@@ -1,9 +1,10 @@
-site_name: Unnamed system docs
+site_name: Zarinit routers
 repo_url: https://github.com/zarinit-routers/docs
 repo_name: GitHub
 edit_uri: blob/main/docs/
+copyright: Death to &copy;
 
-site_description: Documentation for Unnamed system
+site_description: Documentation for Zarinit routers
 site_author: Katy248
 
 plugins:
@@ -11,7 +12,6 @@ plugins:
   - git-revision-date
 
 theme:
-  locale: ru
   name: terminal
   palette: gruvbox_dark
   features:
@@ -23,7 +23,7 @@ theme:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/highlight.min.js
   - https://unpkg.com/highlightjs-cobol/dist/cobol.min.js
-  - add_hljs_highlight.js
+  # - add_hljs_highlight.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/styles/a11y-dark.min.css

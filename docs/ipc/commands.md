@@ -44,6 +44,6 @@ Request:
 }
 ```
 
-Response: такой же как и в [v1/timezone/get](ipc/commands.md#`v1/timezone/get`)
+Response: такой же как и в [v1/timezone/get](./commands.md)
 
 ## Команды на рассмотрении, а также обновление API

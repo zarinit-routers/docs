@@ -6,7 +6,7 @@ IPC (Inter-Process Communication) is a mechanism for exchanging data between pro
 
 ## Облако и ноды
 
-Облако и ноды будут общаться друг с другом через Websocket шину.
+Облако и ноды будут общаться друг с другом через Websocket шину, используя специальные [сообщения](./messages/connector-node.md)
 
 ### Подключение ноды к облаку
 
