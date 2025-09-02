@@ -8,6 +8,8 @@
 
 ## Настройка
 
+### Облако
+
 Склонируйте репозиторий <https://github.com/zarinit-routers/cloud-compose>:
 
 ```bash
@@ -29,3 +31,31 @@ docker compose up --build
 **Доступ к сервисам:**
 
 - `http://localhost:9090` - `cloud-server
+
+### Роутер
+
+Склонируйте репозиторий <https://github.com/zarinit-routers/router-server>:
+
+```bash
+git clone https://github.com/zarinit-routers/router-server.git
+```
+
+Перейдите в директорию `router-server`:
+
+```bash
+cd router-server
+```
+
+Запустите сервер роутера:
+
+```bash
+go run cmd/server/main.go
+```
+
+Если запускать его так, сервер будет использовать нулевые идентифкаторы, это не ломает систему, но не позволяет использовать два и более, поэтому можно запустить второй сервер от имени администратора:
+
+```bash
+sudo go run cmd/server/main.go
+```
+
+Но с этим нужно быть осторожным, пока никакие команды не реализованы полноценно, но в будущем это позволит серверу менять настройки вашего компьютера.
