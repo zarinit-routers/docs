@@ -1,7 +1,9 @@
-FROM ghcr.io/astral-sh/uv:latest
+FROM ghcr.io/astral-sh/uv:alpine
 
-COPY uv.lock .
-RUN uv sync
+WORKDIR /app
+
+COPY uv.lock pyproject.toml ./
+RUN uv sync --locked
 
 COPY . .
 
