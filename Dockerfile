@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:alpine
+FROM ghcr.io/astral-sh/uv:alpine as builder
 
 WORKDIR /app
 
@@ -7,6 +7,8 @@ RUN uv sync --locked
 
 COPY . .
 
-EXPOSE 8000
+RUN uv run mkdocs build --site-dir /dist
 
-CMD ["uv", "run", "mkdocs", "serve"]
+FROM httpd:latest
+
+COPY --from=builder /dist /usr/local/apache2/htdocs

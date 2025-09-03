@@ -9,7 +9,7 @@ site_author: Katy248
 
 plugins:
   - search
-  - git-revision-date
+  # - git-revision-date
 
 theme:
   name: terminal
