@@ -1,7 +1,7 @@
 FROM ghcr.io/astral-sh/uv:latest
 
 COPY uv.lock .
-RUN syn
+RUN uv sync
 
 COPY . .
 
