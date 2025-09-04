@@ -12,9 +12,37 @@
 
 _Пользователь должен состоять в организации для получения информации или быть администратором._
 
+Response:
+
+```json
+{
+    "id": "<id>",
+    "name": "<name>",
+    "passphrase": "<passphrase>",
+    "creationDate": "<creation date>",
+    "lastUpdate": "<last update>"
+}
+```
+
 - ### `GET /api/organizations/`
 
 _Admin only._
+
+Response:
+
+```json
+{
+    "organizations": [
+        {
+            "id": "<id>",
+            "name": "<name>",
+            "passphrase": "<passphrase>",
+            "creationDate": "<creation date>",
+            "lastUpdate": "<last update>"
+        }
+    ]
+}
+```
 
 - ### `POST /api/organizations/update`
 
@@ -58,3 +86,6 @@ Response:
 {
     "token": "<token>"
 }
+```
+
+See [JWT format](../ipc/jwt-token.md#токены-для-нод)

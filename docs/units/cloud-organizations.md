@@ -2,6 +2,10 @@
 
 Реализует [API](../api/organizations.md)
 
+## Запуск
+
+- `JWT_SECURITY_KEY` - ключ для JWT
+
 ## БД
 
 ![cloud-organizations database](cloud-organizations-database.png)
