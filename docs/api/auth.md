@@ -12,7 +12,7 @@
 
 Request (form-data):
 
-```
+```toml
 email: user@example.com
 password: password123
 ```

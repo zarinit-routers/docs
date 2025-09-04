@@ -6,6 +6,7 @@
 
 - [Коннектор `(cloud-connector)`](./connector.md)
 - [Управление `(cloud-server)`](./server.md)
+- [Организации `(cloud-organizations)`](./cloud-organizations.md)
 - [RabbitMQ](./rabbitmq.md)
 - [Авторизация `(cloud-auth)`](./cloud-auth.md)
 - [PostgreSQL](./index.md) // Пока не написана документация
