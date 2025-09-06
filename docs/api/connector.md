@@ -2,9 +2,11 @@
 
 ## Endpoints
 
-- ### GET `/api/clients`
+- ### GET `/api/clients/`
 
-Список клиентов,
+> `/` - на конце важен!
+
+Список клиентов
 
 Response:
 
