@@ -10,6 +10,8 @@
 
 - ### `GET /api/organizations/<id>`
 
+_Not implemented yet._
+
 _Пользователь должен состоять в организации для получения информации или быть администратором._
 
 Response:
@@ -25,6 +27,8 @@ Response:
 ```
 
 - ### `GET /api/organizations/`
+
+_Not implemented yet._
 
 _Admin only._
 
@@ -46,29 +50,43 @@ Response:
 
 - ### `POST /api/organizations/update`
 
+_Not implemented yet._
+
 _Admin only._
 
 - ### `POST /api/organizations/new`
+
+_Not implemented yet._
 
 _Admin only._
 
 - ### `POST /api/organizations/generate-passphrase`
 
+_Not implemented yet._
+
 _Admin only._
 
 - ### `POST /api/organizations/delete`
+
+_Not implemented yet._
 
 _Admin only._
 
 - ### `POST /api/organizations/add-users`
 
+_Not implemented yet._
+
 _Admin only._
 
 - ### `POST /api/organizations/remove-users`
 
+_Not implemented yet._
+
 _Admin only._
 
 - ### `POST /api/organizations/authorize-node`
+
+_Not for UI usage._
 
 Request:
 
