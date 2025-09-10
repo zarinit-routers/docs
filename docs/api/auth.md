@@ -4,31 +4,109 @@
 
 ### `POST /api/auth/login`
 
-### `POST /api/auth/register`
+Request:
 
-### `POST /api/auth/refresh`
+```json
+{
+  "email": "user@example.com",
+  "password": "password"
+}
+```
+
+Response `200`:
+
+```json
+{
+  "token": "",
+}
+```
 
 ## User Endpoints
 
-### `GET /api/user/me`
+### `GET /api/auth/users/me`
 
-### `GET /api/user/:id`
+Response `200`:
 
-### `GET /api/user/list`
+```json
+{
+    "user": {
+        "id": "UUID",
+        "username": "John Doe",
+        "email": "user@example.com",
+        "role": "admin"
+    },
+}
+```
 
-### `POST /api/user/update-email`
+Возвращает информацию о текущем пользователе.
 
-### `POST /api/user/update-password`
+### `GET /api/auth/users/:id`
 
-### `POST /api/user/add-roles`
+Возвращает информацию о пользователе с указанным ID.
 
-### `POST /api/user/remove-roles`
+Response `200`:
 
-### `DELETE /api/user/delete`
+```json
+{
+    "user": {
+        "id": "UUID",
+        "username": "John Doe",
+        "email": "user@example.com",
+        "role": "admin"
+    },
+}
+```
 
-_Скорее всего эта функция будет исключена!_
+### `GET /api/auth/users`
+
+_Только для админов._ Возвращает список всех пользователей.
+
+Response:
+
+```json
+{
+    "users": [
+        {
+            "id": "UUID",
+            "username": "John Doe",
+            "email": "user@example.com",
+            "role": "admin"
+        },
+    ]
+}
+```
+
+### `POST /api/auth/users/:id`
+
+Обновляет информацию о пользователе с указанным ID.
+
+Request:
+
+```json
+{
+    "username": "John Doe",
+    "email": "user@example.com",
+    "password": "password",
+}
+```
+
+### `POST /api/auth/users`
+
+Создает нового пользователя.
+
+Request:
+
+```json
+{
+    "username": "John Doe",
+    "email": "user@example.com",
+    "password": "password",
+}
+```
 
 ## Role Endpoints
+
+_Roles currently not implemented._
 
 ### `GET /api/role/list`
 
