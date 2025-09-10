@@ -38,6 +38,8 @@ Request:
 }
 ```
 
+Response: такой же как и в `v1/timezone/get`
+
 - ### `v1/system/get-os-info`
 
 _Пожалуйста, дополните респонс!._
@@ -56,7 +58,23 @@ Response:
 }
 ```
 
-Response: такой же как и в [v1/timezone/get](./commands.md)
+- ### `v1/ssh/get-status`
+
+Response:
+
+```json
+{
+  "enabled": true
+}
+```
+
+- ### `v1/ssh/disable`
+
+Response: такой же как и `v1/ssh/get-status`
+
+- ### `v1/ssh/enable`
+
+Response: такой же как и `v1/ssh/get-status`
 
 ## Команды, которые должны быть
 
