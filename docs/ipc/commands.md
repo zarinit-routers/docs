@@ -62,4 +62,42 @@ Response: такой же как и в [v1/timezone/get](./commands.md)
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
 
+- firewall
+  - enable
+  - disable
+  - get-status
+- wifi
+  - enable
+  - disable
+  - get-status
+  - ssid
+    - set-visibility
+    - set
+  - set-password
+  - set-channel
+  - get-connected-clients
+- modems
+  - list
+  - disable
+  - enable
+  - get-signal
+- dhcp
+  - enable
+  - disable
+  - get-status
+- system
+  - reboot
+  - get-journal
+  - get-ethernet-ports
+- sim
+  - get
+- ssh
+  - enable
+  - disable
+  - get-status
+- diagnostics
+  - run-ping
+  - run-traceroute
+  - run-nslookup
+
 ## Команды на рассмотрении, а также обновление API
