@@ -41,3 +41,23 @@ Response:
   },
 }
 ```
+
+- ### POST `/api/client/tags/add`
+
+Request:
+
+```json
+{
+  "tags": ["tag1", "tag2"]
+}
+```
+
+- ### POST `/api/client/tags/remove`
+
+Request:
+
+```json
+{
+  "tags": ["tag1", "tag2"]
+}
+```
