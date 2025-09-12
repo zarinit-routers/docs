@@ -54,11 +54,52 @@ _Not implemented yet._
 
 _Admin only._
 
+Request:
+
+```json
+{
+    "id": "<id>",
+    "name": "<name>",
+}
+```
+
+Response:
+
+```json
+{
+    "id": "<id>",
+    "name": "<name>",
+    "passphrase": "<passphrase>",
+    "creationDate": "<creation date>",
+    "lastUpdate": "<last update>"
+}
+```
+
 - ### `POST /api/organizations/new`
 
 _Not implemented yet._
 
 _Admin only._
+
+Request:
+
+```json
+{
+    "name": "<name>",
+}
+```
+
+Response:
+
+```json
+{
+    "id": "<id>",
+    "name": "<name>",
+    "passphrase": "<passphrase>",
+    "creationDate": "<creation date>",
+    "lastUpdate": "<last update>"
+}
+```
 
 - ### `POST /api/organizations/generate-passphrase`
 
@@ -66,11 +107,35 @@ _Not implemented yet._
 
 _Admin only._
 
+Request:
+
+```json
+{
+    "id": "<id>"
+}
+```
+
+Response:
+
+```json
+{
+    "passphrase": "<passphrase>"
+}
+```
+
 - ### `POST /api/organizations/delete`
 
 _Not implemented yet._
 
 _Admin only._
+
+Request:
+
+```json
+{
+    "id": "<id>"
+}
+```
 
 - ### `POST /api/organizations/add-users`
 
@@ -78,11 +143,29 @@ _Not implemented yet._
 
 _Admin only._
 
+Request:
+
+```json
+{
+    "id": "<id>",
+    "users": [ "<user id>", "<user id>" ]
+}
+```
+
 - ### `POST /api/organizations/remove-users`
 
 _Not implemented yet._
 
 _Admin only._
+
+Request:
+
+```json
+{
+    "id": "<id>",
+    "users": [ "<user id>", "<user id>" ]
+}
+```
 
 - ### `POST /api/organizations/authorize-node`
 
