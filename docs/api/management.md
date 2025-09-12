@@ -4,7 +4,9 @@
 
 ## Endpoints
 
-- ### POST `/api/cmd/:cmd`
+- ### POST `/api/cmd/`
+
+_`/` на конце обязателен!_
 
 Выполнение команды на ноде (роутере).
 
@@ -15,7 +17,8 @@
 Request ([согласно](../ipc/messages/cloud-connector.md#request)):
 
 ```json
-{
+{   
+  "command": "v1/timezone/set",
   "nodeId": "UUID",
   "args": {
     "timezone": "Europe/Moscow"
