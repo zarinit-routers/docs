@@ -112,6 +112,16 @@ Request:
 }
 ```
 
+- ### `v1/sim/get`
+
+Request:
+
+```json
+{
+  "sim": "sim1"
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
@@ -135,11 +145,8 @@ Request:
   - disable
   - get-status
 - system
-  - reboot
   - get-journal
   - get-ethernet-ports
-- sim
-  - get
 - diagnostics
   - run-ping
   - run-traceroute
