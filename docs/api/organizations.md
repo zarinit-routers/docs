@@ -190,3 +190,29 @@ Response:
 ```
 
 See [JWT format](../ipc/jwt-token.md#токены-для-нод)
+
+- ### `POST /api/organizations/get-user-organization`
+
+_Not for UI usage._
+
+Using for authorize user in cloud. `cloud-auth` will call this endpoint to add organization data to JWT.
+
+**Authorization:**
+
+`cloud-auth` should add JWT to `Authorization` header. JWT should be signed by with default _JWT_SECURITY_KEY_ (currently using as env variable) without any payload.
+
+Request:
+
+```json
+{
+    "id": "<user id>",
+}
+```
+
+Response:
+
+```json
+{
+    "token": "<token>"
+}
+```

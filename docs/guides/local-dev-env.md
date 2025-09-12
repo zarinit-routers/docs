@@ -28,10 +28,6 @@ cd cloud-compose
 docker compose up --build
 ```
 
-**Доступ к сервисам:**
-
-- `http://localhost:9090` - `cloud-server
-
 ### Роутер
 
 Склонируйте репозиторий <https://github.com/zarinit-routers/router-server>:
