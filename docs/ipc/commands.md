@@ -169,12 +169,6 @@ Response:
   - enable
   - disable
   - get-status
-- system
-  - get-journal
   - get-ethernet-ports
-- diagnostics
-  - run-ping
-  - run-traceroute
-  - run-nslookup
 
 ## Команды на рассмотрении, а также обновление API
