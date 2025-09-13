@@ -122,6 +122,31 @@ Request:
 }
 ```
 
+- ### `v1/journals/get`
+
+Request:
+
+```json
+{
+  "journal": "<journal>"
+}
+```
+
+`journal` values:
+
+- `core`
+- `system`
+- `port-forwarding`
+- `connections`
+
+Response:
+
+```json
+{
+  "journal": "<journal>"
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
