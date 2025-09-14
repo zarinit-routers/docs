@@ -22,7 +22,13 @@ Response:
     "name": "<name>",
     "passphrase": "<passphrase>",
     "creationDate": "<creation date>",
-    "lastUpdate": "<last update>"
+    "lastUpdate": "<last update>",
+    "members": [
+        {
+            "userId": "<UUID>",
+            "createdAt": "<date>"
+        }
+    ]
 }
 ```
 
