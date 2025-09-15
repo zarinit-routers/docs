@@ -219,6 +219,6 @@ Response:
 
 ```json
 {
-    "token": "<token>"
+    "organizationId": "<org id>"
 }
 ```
