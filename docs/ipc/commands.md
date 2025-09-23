@@ -254,6 +254,22 @@ Response:
 }
 ```
 
+- ### `v1/wifi-hotspot/get-connected-clients`
+
+Response:
+
+```json
+{
+  "clients": [
+    {
+      "mac": "",
+      "ip": "",
+      // Another undocumented fields
+    }
+  ]
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
@@ -262,16 +278,6 @@ Response:
   - enable
   - disable
   - get-status
-- wifi
-  - [X] enable
-  - [X] disable
-  - [X] get-status
-  - [X] ssid
-    - [X] set-visibility
-    - [X] set
-  - [X] set-password
-  - [X] set-channel
-  - get-connected-clients
 - dhcp
   - enable
   - disable
