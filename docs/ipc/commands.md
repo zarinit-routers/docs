@@ -263,8 +263,9 @@ Response:
   "clients": [
     {
       "mac": "",
-      "ip": "",
-      // Another undocumented fields
+      "interface": "",
+      "txBitrate": "",
+      "rxBitrate": ""
     }
   ]
 }
