@@ -157,7 +157,8 @@ Response:
   "ssid": "",
   "password": "",
   "band": "",
-  "channel": ""
+  "channel": "",
+  "hidden": false,
 }
 ```
 
@@ -181,6 +182,42 @@ Response:
 }
 ```
 
+- ### `v1/wifi-hotspot/set-ssid`
+
+Request:
+
+```json
+{
+  "ssid": ""
+}
+```
+
+Response:
+
+```json
+{
+  "ssid": ""
+}
+```
+
+- ### `v1/wifi-hotspot/set-ssid-visibility`
+
+Request:
+
+```json
+{
+  "hidden": true
+}
+```
+
+Response:
+
+```json
+{
+  "hidden": true
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
@@ -193,9 +230,9 @@ Response:
   - [X] enable
   - [X] disable
   - [X] get-status
-  - ssid
-    - set-visibility
-    - set
+  - [X] ssid
+    - [X] set-visibility
+    - [X] set
   - set-password
   - set-channel
   - get-connected-clients
