@@ -147,6 +147,40 @@ Response:
 }
 ```
 
+- ### `v1/wifi-hotspot/get-status`
+
+Response:
+
+```json
+{
+  "enabled": true,
+  "ssid": "",
+  "password": "",
+  "band": "",
+  "channel": ""
+}
+```
+
+- ### `v1/wifi-hotspot/enable`
+
+Response:
+
+```json
+{
+  "enabled": true
+}
+```
+
+- ### `v1/wifi-hotspot/disable`
+
+Response:
+
+```json
+{
+  "enabled": false
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
@@ -156,9 +190,9 @@ Response:
   - disable
   - get-status
 - wifi
-  - enable
-  - disable
-  - get-status
+  - [X] enable
+  - [X] disable
+  - [X] get-status
   - ssid
     - set-visibility
     - set
