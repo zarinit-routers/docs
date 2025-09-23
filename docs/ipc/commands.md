@@ -218,6 +218,42 @@ Response:
 }
 ```
 
+- ### `v1/wifi-hotspot/set-password`
+
+Request:
+
+```json
+{
+  "password": ""
+}
+```
+
+Response:
+
+```json
+{
+  "password": ""
+}
+```
+
+- ### `v1/wifi-hotspot/set-channel`
+
+Request:
+
+```json
+{
+  "channel": 10
+}
+```
+
+Response:
+
+```json
+{
+  "channel": 10
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
@@ -233,8 +269,8 @@ Response:
   - [X] ssid
     - [X] set-visibility
     - [X] set
-  - set-password
-  - set-channel
+  - [X] set-password
+  - [X] set-channel
   - get-connected-clients
 - dhcp
   - enable
