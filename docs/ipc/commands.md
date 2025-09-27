@@ -271,18 +271,44 @@ Response:
 }
 ```
 
+- ### `v1/dhcp/get-status`
+
+Response:
+
+```json
+{
+    "enabled": true
+}
+```
+
+- ### `v1/dhcp/enable`
+
+Response:
+
+```json
+{
+    "enabled": true
+}
+```
+
+- ### `v1/dhcp/disable`
+
+Response:
+
+```json
+{
+    "enabled": false
+}
+```
+
 ## Команды, которые должны быть
 
 Можно воспринимать этот список как некое TODO, это те команды, которые обязательно должны быть реализованы.
 
-- firewall
+- [ ] firewall
   - enable
   - disable
   - get-status
-- dhcp
-  - enable
-  - disable
-  - get-status
-  - get-ethernet-ports
+- [ ] get-ethernet-ports
 
 ## Команды на рассмотрении, а также обновление API
